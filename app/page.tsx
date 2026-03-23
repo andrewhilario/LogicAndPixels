@@ -773,8 +773,11 @@ export default function Home() {
               </div>
               <div className="flex gap-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/logicandpixels"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary"
+                  aria-label="Logic & Pixels on Facebook"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -962,7 +962,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/#contact"
                     className="text-sm text-muted-foreground hover:text-primary"
                   >
                     Contact
@@ -975,7 +975,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/privacy"
                     className="text-sm text-muted-foreground hover:text-primary"
                   >
                     Privacy Policy
@@ -983,15 +983,15 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/terms"
                     className="text-sm text-muted-foreground hover:text-primary"
                   >
-                    Terms of Service
+                    Terms &amp; Conditions
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/cookies"
                     className="text-sm text-muted-foreground hover:text-primary"
                   >
                     Cookie Policy

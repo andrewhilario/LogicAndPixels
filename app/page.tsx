@@ -722,13 +722,26 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="space-y-4 mt-6">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-medium">logicandpixel@gmail.com</p>
+                      <div className="mt-1 flex flex-col gap-1">
+                        <a
+                          href="mailto:logicandpixels@gmail.com"
+                          className="font-medium hover:text-primary transition-colors"
+                        >
+                          logicandpixels@gmail.com
+                        </a>
+                        <a
+                          href="mailto:info-dev@logicandpixels.dev"
+                          className="font-medium hover:text-primary transition-colors"
+                        >
+                          info-dev@logicandpixels.dev
+                        </a>
+                      </div>
                     </div>
                   </div>
                   {/* <div className="flex items-center gap-3">
@@ -762,14 +775,25 @@ export default function Home() {
                 Transforming ideas into digital reality with custom IT solutions
                 for businesses and academic projects.
               </p>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-primary" />
-                <a
-                  href="mailto:logicandpixel@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  logicandpixel@gmail.com
-                </a>
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 shrink-0 text-primary" />
+                  <a
+                    href="mailto:logicandpixels@gmail.com"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    logicandpixels@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 shrink-0 text-primary" />
+                  <a
+                    href="mailto:info-dev@logicandpixels.dev"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors break-all"
+                  >
+                    info-dev@logicandpixels.dev
+                  </a>
+                </div>
               </div>
               <div className="flex gap-4">
                 <Link

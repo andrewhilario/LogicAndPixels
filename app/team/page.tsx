@@ -160,7 +160,7 @@ export default function TeamPage() {
                   </p>
                   <div className="flex gap-3 mt-4">
                     <Link
-                      href="mailto:contact@logicandpixels.com"
+                      href="mailto:logicandpixels@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Mail className="h-5 w-5" />
@@ -195,7 +195,7 @@ export default function TeamPage() {
                   </p>
                   <div className="flex gap-3 mt-4">
                     <Link
-                      href="mailto:contact@logicandpixels.com"
+                      href="mailto:logicandpixels@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Mail className="h-5 w-5" />
@@ -230,7 +230,7 @@ export default function TeamPage() {
                   </p>
                   <div className="flex gap-3 mt-4">
                     <Link
-                      href="mailto:contact@logicandpixels.com"
+                      href="mailto:logicandpixels@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Mail className="h-5 w-5" />

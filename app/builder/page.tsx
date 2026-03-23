@@ -14,7 +14,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ArrowLeft, Check, Upload, Layout, Eye } from "lucide-react";
 import { WebsiteBuilder } from "@/components/website-builder";
-import { Toaster } from "@/components/ui/toaster";
 
 export default function BuilderPage() {
   const [showBuilder, setShowBuilder] = useState(false);
@@ -57,7 +56,6 @@ export default function BuilderPage() {
           </Button>
           <WebsiteBuilder />
         </div>
-        <Toaster />
       </div>
     );
   }
@@ -247,7 +245,6 @@ export default function BuilderPage() {
           </div>
         </div>
       </div>
-      <Toaster />
     </div>
   );
 }

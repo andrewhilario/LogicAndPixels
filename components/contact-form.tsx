@@ -31,22 +31,49 @@ export function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
 
-    toast({
-      title: "Message Sent",
-      description: "We'll get back to you as soon as possible."
-    });
+      const data = (await res.json().catch(() => ({}))) as {
+        error?: string;
+      };
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: ""
-    });
-    setIsSubmitting(false);
+      if (!res.ok) {
+        toast({
+          variant: "destructive",
+          title: "Could not send message",
+          description:
+            data.error ??
+            "Something went wrong. Please try again or email us directly."
+        });
+        return;
+      }
+
+      toast({
+        title: "Message sent",
+        description: "We'll get back to you as soon as possible."
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
+    } catch {
+      toast({
+        variant: "destructive",
+        title: "Could not send message",
+        description: "Check your connection and try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

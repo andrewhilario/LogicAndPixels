@@ -508,8 +508,58 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
+
+                <Card className="overflow-hidden service-card-hover border-none shadow-custom-light group">
+                  <div className="relative h-64 w-full overflow-hidden">
+                    <Image
+                      src="/images/bucketsave-webapp.png"
+                      alt="BucketSave - Personal Savings Tracker"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center px-6 relative z-10">
+                        <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">
+                          BucketSave
+                        </h3>
+                        <p className="text-white/90 text-sm font-medium drop-shadow">
+                          Personal Savings Tracker
+                        </p>
+                      </div>
+                    </div>
+                    <div className="absolute top-3 left-3 z-10">
+                      <Badge className="bg-green-500 text-white">Live</Badge>
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="text-xl font-bold mb-2">
+                          Save Smarter, Reach Goals Faster.
+                        </h4>
+                        <p className="text-muted-foreground leading-relaxed">
+                          BucketSave is an intuitive savings tracker and financial management platform. Organize your funds into specific buckets, track your progress, and manage your personal finance goals with ease.
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs">Next.js</Badge>
+                        <Badge variant="outline" className="text-xs">SaaS</Badge>
+                        <Badge variant="outline" className="text-xs">Finance</Badge>
+                        <Badge variant="outline" className="text-xs">Savings Tracker</Badge>
+                      </div>
+                      <Link href="https://bucketsave.logicandpixels.dev/" target="_blank" rel="noopener noreferrer">
+                        <Button className="rounded-full mt-2 group">
+                          Visit BucketSave
+                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             )}
+
           </div>
         </section>
 
